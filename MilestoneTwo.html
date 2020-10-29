@@ -8,8 +8,28 @@
 }</style>
 </head>
 <body>
-<body style="background-color:lightblue">
-<img src="img/test.jpg" alt="" height="400" width="400">
+<style>
+body {
+  background-image: url("img/deep.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+<p>Feeling Overwhelmed? You are not alone.</p>
+
+<button onclick="myFunction()">Click Here</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
+</script>
 
 	
 	<a href="https://gmeaso.github.io/MentalHealth/Depression.html" target="_blank">Depression Test</a>
